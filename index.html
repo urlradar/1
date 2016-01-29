@@ -2,9 +2,7 @@
 // http://facebook.com/ismailuygunface
 
 // html5 cache
-// cache manifest - indirilen dosyalardan önbelleğe yüklenmesini istedikleriniz buraya eklenir.
-// network - sadece cemrimici calismasini istediğiniz dosyalar. onbellek istemediginiz odsyalar.
-// fallback - Erişilemeyen sayfalardan oluşan fallback dosyaları buraya eklenir.
+// sayfalarin cevrimdisiyken bile calismasini saglayabilir.
 <html manifest="example.appcache">
   
 // webpage
@@ -23,9 +21,12 @@
 <meta name='viewport' content='width=device-width, initial-scale=1' /> 
 <meta name='robots' content='index, follow, archive, snippet, odp' />
 
-// design
-<link rel='icon' type='image/x-icon' href='http://example.com/favicon.ico' />
+// style
 <link rel='stylesheet' type='text/css' href='http:/example.com/style.css' />
+
+// favicon
+<link rel='icon' type='image/x-icon' href='http://example.com/favicon.ico' />
+<link rel='icon' type='image/x-icon' sizes='16x16' href='http://example.com/favicon.ico' />
 
 // page alternative
 <link rel='shortlink' href='http://exam.pl' />
@@ -38,20 +39,31 @@
 <link rel='prev' href='http://example.com/page/1' />
 <link rel='canonical' href='http://example.com/canonical-url/' />
 
-// app
-<link rel='manifest'  href='manifest.json' />
-<link rel='alternate' href='android-app://example' />
-<link rel='alternate' href='ios-app://example' />
-
-// javascript
-<script src='http://example.com/javascript.js'></script>
-
-// oembed
-<link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='Contact' />
+// opensearch
+<link rel="search" type='application/opensearchdescription+xml' title='website title' href='http://example.com/opensearch.xml' />
 
 // refresh
 <meta http-equiv='refresh' content='60' />
 <meta http-equiv='refresh' content='10'; url='http://example.com' />
+
+// javascript
+<script src='http://example.com/javascript.js'></script>
+
+// language alternative
+<link rel='alternate' hreflang='en' href='http://en.example.com' />
+
+// app
+<link rel='alternate' href='android-app://example' />
+<link rel='alternate' href='ios-app://example' />
+
+// oembed
+<link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='Contact' />
+
+// manifest.json
+// tum isletim sistemi ve altindaki browserlar dahil, baslama ekrani veya uygulama kisayollarinda gorunen iconlar.
+// daha once, her boyut, tarayici ve isletim sistemi icin girilen ayri meta taglarin standarta kavusmus hali.
+// app icon generator http://cthedot.de/icongen/
+<link rel='manifest'  href='manifest.json' />
 
 // twitter cards
 // http://cards-dev.twitter.com/validator
