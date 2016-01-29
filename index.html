@@ -77,7 +77,8 @@
 <meta name='twitter:description' content='article description' />
 <meta name='twitter:image' content='http://example.com/image.jpg' />
 
-// facebook og
+// open graph (facebook + pinterest + googleplus + google)
+// https://developers.facebook.com/tools/debug
 // website | article | image | author | ...
 // website example
 <head prefix='og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#'>
@@ -86,3 +87,12 @@
 <meta property='og:url' content='http://example.com' /> 
 <meta property='og:title' content='website title' /> 
 <meta property='og:image' content='https://example.com/image.png' /> 
+
+// microdata social (googleplus + pinterest)
+// http://www.google.com/webmasters/tools/richsnippets
+// article | blog | book | movie | ...
+// blog example
+<html itemscope itemtype="http://schema.org/Blog">
+<meta itemprop='name' content='blog title'>
+<meta itemprop='description' content='blog description'>
+<meta itemprop='image' content='http://example.com/image.png'>
