@@ -1,7 +1,13 @@
 // 01.01.2010 |  ISMAIL UYGUN
 // http://facebook.com/ismailuygunface
 
-// search engine
+// html5 cache
+// cache manifest - indirilen dosyalardan önbelleğe yüklenmesini istedikleriniz buraya eklenir.
+// network - sadece cemrimici calismasini istediğiniz dosyalar. onbellek istemediginiz odsyalar.
+// fallback - Erişilemeyen sayfalardan oluşan fallback dosyaları buraya eklenir.
+<html manifest="example.appcache">
+  
+// webpage
 <meta charset='utf-8' />
 <meta name='title' content='' />
 <meta name='description' content='' />
@@ -33,6 +39,7 @@
 <link rel='canonical' href='http://example.com/canonical-url/' />
 
 // app
+<link rel='manifest'  href='manifest.json' />
 <link rel='alternate' href='android-app://example' />
 <link rel='alternate' href='ios-app://example' />
 
@@ -43,5 +50,15 @@
 <link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='Contact' />
 
 // refresh
-<meta http-equiv="refresh" content='60' />
-<meta http-equiv="refresh" content='10'; url='http://example.com' />
+<meta http-equiv='refresh' content='60' />
+<meta http-equiv='refresh' content='10'; url='http://example.com' />
+
+// twitter cards
+// http://cards-dev.twitter.com/validator
+// summary | summary_large_image | photo | gallery | app | product
+// summary example
+<meta name='twitter:card' content='summary' /> 
+<meta name='twitter:site' content='@example' />
+<meta name='twitter:title' content='article title' />
+<meta name='twitter:description' content='article description' />
+<meta name='twitter:image' content='http://example.com/image.jpg' />
