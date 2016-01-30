@@ -33,7 +33,7 @@
 <meta name='author' content='Ad SOYAD' />
 <link rel='author' href='https://plus.google.com/...' /> // googleplus profilinde web sayfasini dogrulamak gerekir.
 
-// yayimci & firma
+// yayimci - firma
 <link rel='publisher' href='https://plus.google.com/...' /> // googleplus profilinde firma sayfasini dogrulamak gerekir.
 
 // page alternative
@@ -68,11 +68,31 @@
 // oembed
 <link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='Contact' />
 
+// generator
+// cekirdek yazilimin olusturuldugu sistem.
+<meta name='generator' content='' />
+
 // manifest.json
 // tum isletim sistemi ve altindaki browserlar dahil, baslama ekrani veya uygulama kisayollarinda gorunen iconlar.
 // daha once, her boyut, tarayici ve isletim sistemi icin girilen ayri meta taglarin standarta kavusmus hali.
 // app icon generator http://cthedot.de/icongen/
 <link rel='manifest'  href='manifest.json' />
+
+// pingback
+<link rel ='Pingback' href='http://example.com/xmlrpc.xml' />
+
+// rsd protokol
+// 2. taraf uygulamalar icin habaerlesme.
+<link rel='EditURI' type='application/rsd+xml' title='RSD' href='http://example.com/xmlrpc.php?rsd' />
+
+// windows writer protokol
+<link rel='wlwmanifest' type='application/wlwmanifest+xml' href='http://example.com/wlwmanifest.xml' />
+
+// base
+// belgedeki goreceli baglantilar icin dizin belirler.
+// belgedeki baglantilarin turlerini belirler.
+// frameismi | _parent | _self | _top | _blank
+<base href='http://example.com' target='_blank' />
 
 // twitter cards
 // http://cards-dev.twitter.com/validator/
