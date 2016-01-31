@@ -29,40 +29,40 @@
 <meta name='robots' content='index, follow, archive, snippet, odp' />
 
 // html5 link
-<link rel='alternate' type='application/rss+xml' href='http://example.com/rss' />
-<link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='contact' />
-<link rel='alternate' type='application/xml' href='' /> // sitemap icin kullanilabilir oldugunu dusunuyorum. typenin aldigi deger arastirilmali.
-<link rel='alternate' media='handheld, only screen and (max-width: 640px)' href='http://m.example.com' /> // mobil sayfayada canonicial koymali.
 <link rel='alternate' href='android-app://example' />
 <link rel='alternate' href='ios-app://example' />
+<link rel='alternate' media='handheld, only screen and (max-width: 640px)' href='http://m.example.com' /> // mobil sayfayada canonicial koymali.
+<link rel='alternate' type='application/json+oembed' href='http://example.com/oembed' title='contact' />
+<link rel='alternate' type='application/rss+xml' href='http://example.com/rss' />
+<link rel='alternate' type='application/xml' href='' /> // sitemap icin kullanilabilir oldugunu dusunuyorum. typenin aldigi deger arastirilmali.
 <link rel='archives' href='http://blog.unto.net/2003/05/' />
 <link rel='author' href='http://googleplus.com/profile' /> // googleplus yazar sayfasini baglamak icin gereklidir. en dogrusudur.
 <link rel='bookmark'href='' /> // sayfadaki icerikle alakali bir link.
-<link rel='license' href='' /> // sayfanin telif haklarinin bulundugu dosyayi belirtir.
 <link rel='canonical' href='' />
-<link rel='stylesheet' href='http:/example.com/style.css' />
-<link rel='stylesheet' href='http:/example.com/style-480px.css' media='only screen and (max-width: 480px)' /> // mobil icin disaridan css cagirma.
-<link rel='next' href='http://example.com/page/2' />
-<link rel='prev' href='http://example.com/page/1' />
 <link rel='help' title='faq' href='/faq' /> // html 4.01 destekler. sayfa icin gecerli yardim belgesi.
 <link rel='icon' type='image/png' sizes='' href='' />
 <link rel='icon' type='image/x-icon' sizes='' href='.ico' />
+<link rel='license' href='' /> // sayfanin telif haklarinin bulundugu dosyayi belirtir.
+<link rel='next' href='http://example.com/page/2' />
 <link rel='prefetch' href='' />
+<link rel='prev' href='http://example.com/page/1' />
 <link rel='search' type='application/opensearchdescription+xml' href='http://example.com/opensearch.xml' />
 <link rel='sidebar' href='' /> // muhtemelen bookmarka eklemeye yariyor.
+<link rel='stylesheet' href='http:/example.com/style-480px.css' media='only screen and (max-width: 480px)' /> // mobil icin disaridan css cagirma.
+<link rel='stylesheet' href='http:/example.com/style.css' />
 <link rel='tag' href='' />
 
 // microformats
-<link rel='start' href='http://example.com' />
-<link rel='shortlink' href='http://example.com' />
 <link rel='alternate' hreflang='en' href='http://en.example.com' />
-<link rel='sitemap' type='application/xml' href='' />
 <link rel='publisher' href='https://plus.google.com/...' /> // googleplus profilinde firma sayfasini dogrulamak gerekir.
+<link rel='shortlink' href='http://example.com' />
+<link rel='sitemap' type='application/xml' href='' />
+<link rel='start' href='http://example.com' />
 <meta name='revisit-after' content='' /> // daha once tek bir arama motoru tarafindan kullanilmis. suan google cse desteklemekte. ama google searchte gecersiz.
 
 // google custom search
-<meta name='department' content='legal' /> // 2015 google cse icin bu ozelligi desteklemeye basladi. icerigin ilgili oldugu konuyu belirmek icin kullaniliyor.
 <meta name='audience' content='all' /> // 2015 google cse icin bu ozelligi desteklemeye basladi. yetiskin icerigi filtrelemek icin 2000li yillarda harici programlar tarafindan kullanilmis. 
+<meta name='department' content='legal' /> // 2015 google cse icin bu ozelligi desteklemeye basladi. icerigin ilgili oldugu konuyu belirmek icin kullaniliyor.
 <meta name='doc_status' content='draft' /> // 2015 google cse icin bu ozelligi desteklemeye basladi. sayfanin durumu. muhtemelen draft, publish ozelliklerini aliyor.
 <meta name='rating' content='general' /> // 2015 google cse icin siralamaya izin verebilmeyi duyurdu. sadece rakam degeri aliyor. // yetiskin icerigi filtrelemek icin 2000li yillarda harici programlar tarafindan kullanilmis.
 
@@ -79,7 +79,6 @@
 <meta name='apple-mobile-web-app-status-bar-style' content='black' /> // apple safaride default temanin hangi renkte olacaginin kontrolunu bu tag ile yapar.
 
 // explorer
-<meta name='mssmarttagspreventparsing' content='true' /> // ie6daki akilla tah olusturma ozelliginin kontrolunu saglar.
 <meta name='msapplication-allowdomainapicalls' content='true' />
 <meta name='msapplication-allowdomainmetatags' content='true' />
 <meta name='msapplication-badge' content='frequency=30; polling-uri=http://example.com/id45453245/polling.xml' /> // pinin bagli oldugu icerigi guncelleme sikligini belirtir. windows8 destekler. 
@@ -89,32 +88,33 @@
 <meta name='msapplication-tileimage' content='images\tileimage.jpg' /> // kayitli uyglama pininin resmini belirler. ie8 ve ie10 harici desteklemez.
 <meta name='msapplication-tooltip' content='example tooltip text' /> // kayitli uygulama pininin uzerine gelindiginde gorunen kisa aciklama. ie10+.
 <meta name='msapplication-window' content='width=1024;height=768' /> // kayitli uygulamanin baslangic boyutunu ayarlar. ie11 ie10 destekler.
+<meta name='mssmarttagspreventparsing' content='true' /> // ie6daki akilla tah olusturma ozelliginin kontrolunu saglar.
 
 // meta http-equiv 
 // eksik taglar mevcut. standarti belli degil. taglarin yaptigi is net degil.
-<meta http-equiv='page-enter' content='revealtrans(duration=seconds,transition=num)' />
-<meta http-equiv='page-exit' content='revealtrans(duration=seconds,transition=num)' />
-<meta http-equiv='pics-label' content=’labellist‘ />
-<meta http-equiv='www-authenticate' content='' /> // kimlik dogrulamasiyla ilgi ama net degil.
-<meta http-equiv='window-target' content='location' /> // muhmelen frame icerisinde gorulmasini engelliyor.
-<meta http-equiv='last-modified' content='date' /> // sayfanin son degistirildigi zaman.
-<meta http-equiv='date' content='date' /> // sayfanin olusturuldugu zaman.
-<meta http-equiv='content-encoding' content='gzip' />
-<meta http-equiv='set-cookie' content='name=value; expires=date; path=url“' />
+<meta http-equiv='cache-control' content='option' /> // pragmanin yeni versiyonu. taryiciya onbellekten sayfayı okuma mesaji verir. no-store kullanilirsa onbellek aramadan direk acar. 
 <meta http-equiv='content-disposition' content='attachment' /> // sayfada idrek link verilen dosyalarin, indirilmesi icin diyalog olusturmaya yarar.
+<meta http-equiv='content-encoding' content='gzip' />
 <meta http-equiv='content-language' content='bg' /> // tarayiciya, websitenin hangi dili kullanan insanlar icin hazirlandigini belirtir. html lang='es' varsa bu taninmayabilir. yada gereksiz olabilir.
 <meta http-equiv='content-script-type' content='text/javascript' />
 <meta http-equiv='content-style-type' content='text/css' />
 <meta http-equiv='content-type' content='text/html; charset=utf-8' /> icerigin karekter kodlamasini belirtir. bunun yerine meta charset kullanmak daha teknolojik.
+<meta http-equiv='date' content='date' /> // sayfanin olusturuldugu zaman.
 <meta http-equiv='default-style'/> tag
 <meta http-equiv='expires' content='0' /> taryiciya onbellekeki sayfayi yenilenmesi gereken tarihi belirtir.
 <meta http-equiv='imagetoolbar' content='false' /> // ie6 icin gelistirilmis. resimlerin uzerinde gozuken kutuyu acip kapama islemi.
+<meta http-equiv='last-modified' content='date' /> // sayfanin son degistirildigi zaman.
+<meta http-equiv='page-enter' content='revealtrans(duration=seconds,transition=num)' />
+<meta http-equiv='page-exit' content='revealtrans(duration=seconds,transition=num)' />
+<meta http-equiv='pics-label' content=’labellist‘ />
 <meta http-equiv='pragma' content='no-cache' /> // cache-controlun eski versiyonu. taryiciya onbellekten sayfayı okuma mesaji verir. no-store kullanilirsa onbellek aramadan direk acar. 
 <meta http-equiv='refresh' content='...;url=...' />
 <meta http-equiv='reply-to' content='admin@example.com' /> // html 2.0 doneminden kalma.
+<meta http-equiv='set-cookie' content='name=value; expires=date; path=url“' />
+<meta http-equiv='window-target' content='location' /> // muhmelen frame icerisinde gorulmasini engelliyor.
+<meta http-equiv='www-authenticate' content='' /> // kimlik dogrulamasiyla ilgi ama net degil.
 <meta http-equiv='x-dns-prefetch-control' content='off' />
 <meta http-equiv='x-ua-compatible' content='ie=9' /> // ie icin uyumluluk belgesi. yani ienin desteklenen versiyonlari buraya eklenerek, ust versiyon tarayicilarin eski versiyonlari simule etmesi beklenir.
-<meta http-equiv='cache-control' content='option' /> // pragmanin yeni versiyonu. taryiciya onbellekten sayfayı okuma mesaji verir. no-store kullanilirsa onbellek aramadan direk acar. 
 
 // twitter cards
 // http://cards-dev.twitter.com/validator/
